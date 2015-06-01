@@ -144,6 +144,16 @@ final class FOSUserEvents
      */
     const REGISTRATION_COMPLETED = 'fos_user.registration.completed';
 
+
+    /**
+     * The REGISTRATION_SHOW_FORM event occurs before render registration form.
+     *
+     * This event allows you to access the response which will be sent.
+     * The event listener method receives a FOS\UserBundle\Event\FormEvent instance.
+     */
+    const REGISTRATION_SHOW_FORM = 'fos_user.registration.show_form';
+
+
     /**
      * The REGISTRATION_CONFIRM event occurs just before confirming the account.
      *
